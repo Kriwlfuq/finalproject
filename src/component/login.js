@@ -15,7 +15,7 @@ const LoginForm = () => {
     };
 
     try {
-      const response = await axios.post("http://localhost:3001/user/login", loginData);
+      const response = await axios.post("https://finalproject-api-chi.vercel.app/user/login", loginData);
       const { token } = response.data;
 
       // Store the token in local storage

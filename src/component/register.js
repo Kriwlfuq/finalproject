@@ -10,7 +10,7 @@ const RegisterForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:3001/user/register", { username, password });
+      const response = await axios.post("https://finalproject-api-chi.vercel.app/user/register", { username, password });
       console.log(response.data); // You can handle the response data as needed
       setError("");
     } catch (error) {
